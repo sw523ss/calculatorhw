@@ -13,7 +13,7 @@ def division (a, b):
 def square (a):
     return a ** 2
 
-def squareroot(a):
+def sqrt(a):
     return a ** 0.5
 
 
@@ -54,8 +54,8 @@ class Calculator:
         self.result = square(a)
         return self.result
 
-    def squareroot(self, a, ):
+    def sqrt(self, a, ):
         a = float(a)
-        self.result = squareroot(a)
+        self.result = sqrt(a)
         return self.result
 
