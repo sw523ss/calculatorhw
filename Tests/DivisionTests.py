@@ -8,7 +8,6 @@ class MyTestCase(unittest.TestCase):
     def setUp(self) -> None:
         self.calculator = Calculator()
 
-
     def test_instantiate_calculator(self):
         self.assertIsInstance(self.calculator, Calculator)
 
@@ -23,5 +22,8 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.divide(row['Value 1'], row['Value 2']), result)
             self.assertEqual(self.calculator.result, result)
 
-if __name__ == '__main__':
-    unittest.main ()
+    def test_results_property(self):
+        self.assertEqual(self.calculator.result, 6)
+
+    if __name__ == '__main__':
+        unittest.main()
